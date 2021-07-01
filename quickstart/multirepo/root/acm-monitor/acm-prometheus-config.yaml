@@ -34,7 +34,7 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: prometheus-acm
-  namespace: monitoring
+  namespace: monitoring1
 ---
 apiVersion: monitoring.coreos.com/v1
 kind: Prometheus
