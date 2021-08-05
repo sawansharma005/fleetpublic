@@ -20,3 +20,20 @@ spec:
     imagePullPolicy: IfNotPresent
     name: busybox
   restartPolicy: Always
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: busybox1
+  namespace: busybox
+  labels:
+    app: busybox1
+spec:
+  containers:
+  - image: busybox
+    command:
+      - sleep
+      - "3600"
+    imagePullPolicy: IfNotPresent
+    name: busybox
+  restartPolicy: Always
